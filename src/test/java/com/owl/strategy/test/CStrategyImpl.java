@@ -21,7 +21,7 @@ public class CStrategyImpl implements IBusinessInterface {
   }
 
   @Override
-  public void echo() {
-    System.out.println("ccccccccccccccccccccccccccccccccccccccc");
+  public String echo() {
+    return "ccccccccccccccccccccccccccccccccccccccc";
   }
 }

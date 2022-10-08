@@ -24,7 +24,7 @@ public class AStrategyImpl implements IBusinessInterface{
   }
 
   @Override
-  public void echo() {
-    System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+  public String echo() {
+    return "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
   }
 }

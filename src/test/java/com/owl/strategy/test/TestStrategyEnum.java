@@ -18,12 +18,6 @@ public enum TestStrategyEnum implements IStrategyStruct<TestStrategyEnum,IBusine
   ;
 
   @Override
-  public TestStrategyEnum strategy() {
-    return this;
-  }
-
-
-  @Override
   public TestStrategyEnum getEnum() {
     return this;
   }

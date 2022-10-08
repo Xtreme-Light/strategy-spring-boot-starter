@@ -21,7 +21,7 @@ public class BStrategyImpl implements IBusinessInterface {
   }
 
   @Override
-  public void echo() {
-    System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+  public String echo() {
+    return "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb";
   }
 }

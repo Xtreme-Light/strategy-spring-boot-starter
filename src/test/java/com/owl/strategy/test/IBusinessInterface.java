@@ -12,5 +12,5 @@ import com.owl.strategy.interfaces.IStrategyConstraint;
  **/
 public interface IBusinessInterface extends IStrategyConstraint<TestStrategyEnum> {
 
-  void echo();
+  String echo();
 }

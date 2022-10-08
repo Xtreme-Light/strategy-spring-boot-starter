@@ -19,14 +19,17 @@ class StrategySpringBootStarterApplicationTests {
   void contextLoads() {
     final IBusinessInterface iBusinessInterface = iStrategy.pickStrategy(
         TestStrategyEnum.A, IBusinessInterface.class);
-    iBusinessInterface.echo();
+    assert "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".equals(iBusinessInterface.echo());
     final IBusinessInterface iBusinessInterface1 = iStrategy.pickStrategy(TestStrategyEnum.B,
         IBusinessInterface.class);
-    iBusinessInterface1.echo();
+    assert "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb".equals(iBusinessInterface1.echo());
     final IBusinessInterface iBusinessInterface2 = iStrategy.pickStrategy(TestStrategyEnum.C,
         IBusinessInterface.class);
-    iBusinessInterface2.echo();
+    assert "ccccccccccccccccccccccccccccccccccccccc".equals(iBusinessInterface2.echo());
 
+    final IBusinessInterface iBusinessInterface3 = iStrategy.pickStrategy(TestStrategyEnum.A);
+    iBusinessInterface3.echo();
+    assert "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".equals(iBusinessInterface3.echo());
 
   }
 
